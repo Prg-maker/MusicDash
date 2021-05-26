@@ -23,7 +23,6 @@ body{
     width: 90%;
     height: 80%;
     box-shadow: 0px 10px 32px 8px rgba(28, 8, 133, 0.4);
-
 }
 
 /*button*/
@@ -165,7 +164,40 @@ footer h3{
 .player{
     margin-top: 2.5rem;
 }
+.player span{   
+    color: white;
+    float: left;
+    margin-left: 1.5rem;
 
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+    top: 2.5rem;
+
+}
+.player p{   
+    color: white;
+    text-align: left;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    margin-left: 1.5rem;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+    top: 2.5rem;
+
+    
+}
 .top{
     
     height: 20rem;
@@ -357,11 +389,16 @@ footer h3{
 
 /*font-family: 'Loved by the King', cursive;*/
 
+.audio{
+    position:relative;
+    right:20rem;
+}
+
 .singers{
     display:flex;
     flex-direction: column;
     background: white;
-    z-index: 1;
+    z-index: 10;
     justify-content: center;
     width: 40%;
     margin: 0 auto;
@@ -411,8 +448,9 @@ footer h3{
     bottom: 0.5rem;
 }
 .singers span{
-    font-size: 8px;
+    font-size: 10px;
     color: #BEB7C0;
+    font-weight: bold;
     position: relative;
     bottom: 0.5rem;
 }
@@ -449,5 +487,279 @@ footer h3{
     margin-left: 30rem;
     position: relative;
     bottom: 18.5rem;
-    left: 11.5rem;
+    left: 12rem;
+    z-index:5;
+    background:white;
+    box-shadow: 0px 60px 100px rgba(65, 44, 100, 0.3);
+}
+.material-icons{
+    cursor:pointer;
+    color:#C7C5D0;
+}
+.play_arrow{
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.material{
+    margin-left:2rem ;
+    margin-top: 2rem;
+}
+#pause{
+   background-color: var(--color-purple );
+   padding: 5px;
+   border-radius: 50px;
+   color: white;
+
+   margin: 0 0.5rem;
+   
+   font-size: 25px;
+
+}
+#before{
+    background-color: var(--color-purple );
+   padding: 2.5px;
+   border-radius: 50px;
+   color: white;
+   margin-left:  0.5rem;
+   
+   
+}
+
+#next{
+    background-color: var(--color-purple );
+    padding: 2.5px;
+    border-radius: 50px;
+    color: white;
+   margin-right:  0.5rem;
+
+}
+
+
+/*Style BAR*/
+.bar{
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-bottom: .8rem;
+    background: linear-gradient( to left,#E0E0E0 50%, var(--color-purple) 10%);
+    height: 2.5px;
+}
+.progress{
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    border: 2px solid var(--color-purple);
+    bottom: 10px;
+    z-index: 2;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2.8rem;
+    left: 14rem;
+}
+.inprogress{
+    width: 14.2px;
+    position: relative;
+    height: 14.5px;
+    background-color: var(--color-purple);
+    z-index: 2;
+    border-radius: 50px;
+}
+
+.player_touch span{
+    display: inline-block;
+    margin-left: 7.5rem ;
+
+
+}
+#first{
+    position: relative;
+    right: 4.5rem;
+}
+/*Style copy*/
+.copy{
+    background:var(--color-purple);
+    width: 428.59px;
+    height: 147.38px;
+    border: 4px solid #816AFE;
+    box-sizing: border-box;
+    box-shadow: 0px 60px 100px rgba(65, 44, 100, 0.3);
+    border-radius: 24px;
+    margin-left: 30rem;
+    position: relative;
+    bottom: 20rem;
+    color: white;
+    left: 19rem;
+    z-index:2;
+}
+
+.bar_copy{
+    background: linear-gradient( to left,#6759F6 50%, #E0E0E0  10%);
+    
+}
+#pause_copy{
+    border: 1.5px solid white;
+    border-radius: 50px;
+    padding:2.5px;
+    border-radius: 50px;
+    color: white;
+
+   margin: 0 0.25rem;
+   
+   font-size: 25px;
+}
+#before_copy{
+    border: 1.5px solid white;
+    border-radius: 50px;
+    color: white;
+    margin-left:  0.5rem;
+    
+}
+
+#next_copy{
+    border: 1.5px solid white;
+    border-radius: 50px;
+    color: white;
+    margin-right:  0.5rem;
+
+}
+
+
+
+.copy_progress{
+    border: 2px solid white;
+    background-color: var(--color-purple);
+    width: 14.2px;
+    height: 14.5px;
+    margin-bottom: .3rem;
+    margin-left: 0.2rem;
+    
+}
+#first_copy{
+    margin-right: 15rem;
+    position: relative;
+    left: 2rem;
+}
+
+.group42{
+    position: relative;
+    z-index: 0;
+    bottom: 45rem;
+    left: 22.4rem;
+    float: right;
+}
+/*Style ROTATE*/
+.rotate{
+    position: relative;
+    bottom: 16rem;
+}
+.rotate_text{
+    font-family: Loved by the King;
+    transform: rotate(4deg);
+    font-size: 35px;
+}
+.rotate img{
+    margin-left: 24rem;
+    position:relative;
+    top:2rem;
+}
+
+/*Style START*/
+
+.start{
+    width: 255px;
+    height: 56px;
+    color: var(--color-purple);
+    border: 2px solid var(--color-purple);
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    left: 38.5rem ;
+    margin-top: 5rem;
+}
+/*Style footer*/
+footer{
+    margin-top: 5rem;
+    width: 100%;
+    box-shadow: 0px 10px 32px 8px rgba(28, 8, 133, 0.4);
+    height: 563.12px;
+    background-color: var(--color-purple);
+}
+
+.left_footer{
+    position: relative;
+    top: 5rem;
+}
+.left_footer .logo{
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.left_footer p{
+    text-align: left;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+.download_one{
+    margin-left: 6.5rem;
+}
+.download_trow{
+    margin-left: 0.5rem;
+}
+.left_footer p:last-child{
+    position: relative;
+    top: 3rem;
+}
+
+.right_footer{
+    position: relative;
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 26.5rem;
+    height: 100%;
+}
+.right_footer table{
+    position: relative;
+    bottom: rem;
+}
+.right_footer thead th{
+    color: #8EFCBA;
+    padding-left: 5rem;
+    position: relative;
+    right: 4.9rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+.right_footer tbody{
+    text-align: left;
+    color: white;
+}
+.right_footer tbody td {
+    padding-bottom: 2rem;
+}
+.right_footer tbody a {
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.redes{
+    position: relative;
+    top: 10rem;
+    right: 5rem;
+}
+#login{
+    text-decoration: none;
+    color: white;
 }

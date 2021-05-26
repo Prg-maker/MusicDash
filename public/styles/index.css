@@ -113,7 +113,12 @@ main{
     font-size: 16px;
     line-height: 25px;
     filter: drop-shadow(4px 4px 28px rgba(0, 0, 0, 0.15));
+ 
 
+}
+#login{
+    text-decoration: none;
+    color: white;
 }
 .right{
   margin-left: 19rem;

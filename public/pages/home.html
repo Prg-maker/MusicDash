@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300&display=swap" rel="stylesheet">
     <title>Music</title>
     
    
@@ -25,7 +29,7 @@
                  
                 <div class="button">
                     <button>Sing up</button>
-                    <button>Log in</button>
+                    <button><a id="login" href="/login">Login</a></button>
                         
                     <select name="languages" id="languages">
                         <option value="0">En</option>
@@ -62,9 +66,18 @@
                 <div class="top">
                     <table>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -72,8 +85,14 @@
                 <div class="mid">
                     <table>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -82,8 +101,14 @@
                 <div class="last">
                     <table>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
+                            <td>
+                                <p>about object</p>
+                                <span>about</span>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -109,7 +134,7 @@
             <div class="audio">
 
                 <div class="singers">
-                    <div class="sing"></div>
+                    <div class="sing"><img src="../assets/banners/arte.png" alt=""></div>
 
                     <div class="description">
                         <p id="fist">Purple Haze</p>
@@ -129,17 +154,135 @@
                 </div>
                 <div class="player_touch">
                     <div class="play_arrow">
-                        <img src="../assets/" alt="">
+                        <div class="material">
+                            <i class="material-icons">repeat_one</i>
+                            <i class="material-icons">loop</i>
+                            <i id="before" class="material-icons">navigate_before</i>
+                            <i id="pause" class="material-icons">pause</i>
+                            <i id="next" class="material-icons">navigate_next</i>
+                            <i class="material-icons">repeat</i>
+                            <i class="material-icons">volume_up</i>
+                        </div>
+                        <div class="bar"><div class="progress"><div class="inprogress"></div></div></div>
+                        <span id="first">15:00</span>
+                        <span>24:02</span>
+
+
+
                     </div>
                 </div>
-               
+                <div class="copy">
+                    <div class="play_arrow">
+                        <div class="material">
+                            <i class="material-icons">repeat_one</i>
+                            <i class="material-icons">loop</i>
+                            <i id="before_copy" class="material-icons">navigate_before</i>
+                            <i id="pause_copy" class="material-icons">pause</i>
+                            <i id="next_copy" class="material-icons">navigate_next</i>
+                            <i class="material-icons">repeat</i>
+                            <i class="material-icons">volume_up</i>
+                        </div>
+                        <div class="bar bar_copy"><div class="progress copy_progress"></div></div>
+                        <span id="first_copy">04:00</span>
+                        <span>10:00</span>
+                    </div>
+
+                </div>
+
+                <div class="rotate">
+
+                    <img src="../assets/Vector 4.png" alt="">
+                    <h3 class="rotate_text">Try it by yourself</h3>
+                </div>
+
+
+           
+                <div>
+                    <img class="group42" src="../assets/Group 42.png" alt="group 42">
+
+                </div>
+                <div id="start">
+                    <button class="start">Start listening for free</button>
+                </div>
+        
 
             </div>
+
+
+            <footer>
+               
+                <div class="left_footer">
+                    <img class="logo" src="../assets/Logo.png" alt="Logo">
+                    <p>Corporis ut aliquid qui molestiae. Sed laborum sunt recusandae animi dolore voluptates.</p>
+
+                    <p>Download for:</p>
+                    <img  class="download_one" src="../assets/Old landing.png" alt="">
+                    <img class="download_trow" src="../assets/Group 29.png" alt="">
+
+
+                    <p>©2020 All rights reserved</p>
+
+
+                 
+                </div>
+                <div class="right_footer">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Company</th>
+                                <th>Privacy</th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Download</a></td>
+                                <td><a href="#">Brand</a></td>
+                                <td><a href="#">Privacy</a></td> 
+                            </tr>
+                            <tr>
+                                <td><a href="#">Pricing</a></td>
+                                <td><a href="#">FAQ</a></td>
+                                <td><a href="#">Terms of Use</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Locations</a></td>
+                                <td><a href="#">Tutorial</a></td>
+                                <td><a href="#">Site Map</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Server</a></td>
+                                <td><a href="#">About Us</a></td>
+                                <td><a href="#"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Countries</a></td>
+                                <td><a href="#">We're hiring!</a></td>
+                                <td><a href="#"></a></td>
+                            </tr> 
+                            <tr>
+                                <td><a href="#">Blog</a></td>
+                                <td><a href="#">Support</a></td>
+                                <td><a href="#"></a></td>
+                            </tr> 
+                            
+                        </tbody>
+                    </table>
+                    <div class="redes">
+                        <a href="#"> <img src="../assets/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="../assets/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="../assets/twiter.png" alt=""> </a>
+                    </div>
+                </div>    
+               
+            </footer>
+           
         </main>
     
 
-      
-        
+    
        
 
         <div class="a"></div>
